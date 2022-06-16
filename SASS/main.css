@@ -347,6 +347,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 85%;
 }
 
 @-webkit-keyframes shine {
@@ -373,11 +374,12 @@ h1.titles {
   font-size: 60px;
   /* font-family: 'Pattaya', sans-serif; */
   font-family: 'Pattaya';
-  letter-spacing: 0.6vw;
+  letter-spacing: 0.2vw;
   color: white;
   background: url(../img/bgc2.png);
   background-size: auto 200%;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: shine 6s linear infinite;
           animation: shine 6s linear infinite;
@@ -398,8 +400,9 @@ h1.titles {
     /*  position: relative;
                     top:0;
                     left: 0; */
+    max-width: 85%;
   }
-  h1.titles {
+  .header .titles {
     font-size: 100px;
   }
 }

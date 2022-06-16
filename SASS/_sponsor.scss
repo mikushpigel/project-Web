@@ -1,9 +1,9 @@
+.card-title {
+    font-family: 'Pattaya';
+    font-size: 1.6rem;
+}
 
-       .card-title{
-           font-family: 'Pattaya';
-           font-size: 1.6rem;
-       }
-      /*  .card-text{
+/*  .card-text{
            font-family: $basefont;
             font-weight: bolder;
        }
@@ -41,41 +41,39 @@
             
 
         } */
-        .wrapper-spon{
-            width: 100%;
-            height: 85vh;
-            overflow: hidden;
-            margin: 0 auto;
-            background-color: rgba(0, 0, 0, 0.842);
-            /* transform: skew(5deg);
+.wrapper-spon {
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.842);
+    /* transform: skew(5deg);
             overflow: hidden; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        }
+}
 
-        .spon-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-             transform: skew(5deg);
-            /* margin: 10vmin; */
-            /* overflow: hidden;
+.spon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: skew(5deg);
+    /* margin: 10vmin; */
+    /* overflow: hidden;
             transform: skew(5deg); */
-            /* min-height: 100vh; */
-            width: 80%;
-             background: rgba(0, 0, 0, 0.959);
-        }
+    /* min-height: 100vh; */
+    width: 80%;
+    background: rgba(0, 0, 0, 0.959);
 
-        .spon-container .card-spon {
-            flex: 1;
-            transition: all 1s ease-in-out;
-            height: 55vmin;
-            position: relative;
-        }
+    .card-spon {
+        flex: 1;
+        transition: all 1s ease-in-out;
+        height: 55vmin;
+        position: relative;
 
-        .spon-container .card-spon .card__head {
+        .card__head {
             color: rgb(241, 225, 225);
             background: rgba(170, 61, 221, 0.75);
             padding: 0.5em;
@@ -92,143 +90,149 @@
             white-space: nowrap;
         }
 
-        .spon-container .card-spon:hover {
+        &:hover {
             flex-grow: 16;
-        }
 
-        .spon-container .card-spon:hover img {
-            filter: grayscale(0);
-        }
+            img {
+                filter: grayscale(0);
+            }
 
-        .spon-container .card-spon:hover .card__head {
-            text-align: center;
-            top: calc(100% - 2em);
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
-            font-size: 2em;
-            transform: rotate(0deg) skew(-5deg);
-            
+            .card__head {
+                text-align: center;
+                top: calc(100% - 2em);
+                color: white;
+                background: rgba(0, 0, 0, 0.5);
+                font-size: 2em;
+                transform: rotate(0deg) skew(-5deg);
+            }
         }
+    }
+}
 
-        .spon-text {
-            display: none;
-        }
 
-        .spon-container .card-spon:hover .spon-text {
-            display: block;
-            font-size: 1.5rem;
-            color: rgb(163, 163, 185);
-            background: linear-gradient(to right, #20002c, #c589dd);
-            /* transform: translateY(-200px); */
-            top: calc(100% - 2em);
-            width: 50%;
-            margin: 0 auto;
-            padding: 20px 15px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 1rem;
-            border-radius: 8px;
-            box-shadow: 0 0 5px #000;
-        }
 
-        .spon-container .card-spon img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: all 1s ease-in-out;
-            filter: grayscale(100%);
-        }
 
-        .spon-container .card-spon:not(:nth-child(5)) {
-            margin-right: 1em;
-        }
 
-        .card__head a {
-            text-decoration: none;
-            color: aliceblue;
-        }
+
+.spon-text {
+    display: none;
+}
+
+.spon-container .card-spon:hover .spon-text {
+    display: block;
+    font-size: 1.5rem;
+    color: rgb(163, 163, 185);
+    background: linear-gradient(to right, #20002c, #c589dd);
+    /* transform: translateY(-200px); */
+    top: calc(100% - 2em);
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #000;
+}
+
+.spon-container .card-spon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    filter: grayscale(100%);
+}
+
+.spon-container .card-spon:not(:nth-child(5)) {
+    margin-right: 1em;
+}
+
+.card__head a {
+    text-decoration: none;
+    color: aliceblue;
+}
 
 /* btn keyframe */
-        .btnspon a {
-            text-decoration: none;
-            color: rgb(208, 202, 209);
-            font-family: $basefont;
-            font-weight: bolder;
-        }
+.btnspon a {
+    text-decoration: none;
+    color: rgb(208, 202, 209);
+    font-family: $basefont;
+    font-weight: bolder;
+}
 
-        .btnspon {
+.btnspon {
 
-            border: none;
-            outline: none;
-            color: #fff;
-            background: #111;
-            cursor: pointer;
-            position: relative;
-            z-index: 0;
-            border-radius: 10px;
-            width: 100%;
-            font-size: 1.2rem;
-        }
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+}
 
-        .btnspon::before {
-            content: '';
-            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8,
-                    #ff0000);
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            background-size: 400%;
-            z-index: -1;
-            filter: blur(5px);
-            width: calc(100% + 4px);
-            height: calc(100% + 4px);
-            animation: glowing 20s linear infinite;
-            opacity: 0;
-            transition: opacity .3s ease-in-out;
-            border-radius: 10px;
-        }
+.btnspon::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8,
+            #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
 
-        .btnspon:active {
-            color: #000
-        }
+.btnspon:active {
+    color: #000
+}
 
-        .btnspon:active:after {
-            background: transparent;
-        }
+.btnspon:active:after {
+    background: transparent;
+}
 
-        .btnspon:hover:before {
-            opacity: 1;
-        }
+.btnspon:hover:before {
+    opacity: 1;
+}
 
-        .btnspon:after {
-            z-index: -1;
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: #111;
-            left: 0;
-            top: 0;
-            border-radius: 10px;
-        }
+.btnspon:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
 
-        @keyframes glowing {
-            0% {
-                background-position: 0 0;
-            }
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
 
-            50% {
-                background-position: 400% 0;
-            }
+    50% {
+        background-position: 400% 0;
+    }
 
-            100% {
-                background-position: 0 0;
-            }
-        }
-        
+    100% {
+        background-position: 0 0;
+    }
+}
 
-@include desktop{
-    
-/* .row{
+
+@include desktop {
+
+    /* .row{
     display: grid;
             grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
             place-items: center;
@@ -244,26 +248,29 @@
     align-items: center;
     height: 500px !important;
 } */
-/* .spon-container{
+    /* .spon-container{
     width: 80%;
 } */
 
 }
-@include mobile{
-    .spon-container{
+
+@include mobile {
+    .spon-container {
         display: flex;
         flex-wrap: wrap;
     }
-   .spon-container .card-spon:hover .spon-text {
-            display: block;
-            font-size: 1.5rem;
-            color: rgb(6, 6, 10);
-            background: linear-gradient(to right, #20002c36, #c589dd67);
-            transform: translateY(-300px);
-            /* top: calc(100% - 2em); */
-            width: 100%;
-            height: 100%;
-            font-size: 0.9rem;
-            font-weight: bolder;
-           
-}}
+
+    .spon-container .card-spon:hover .spon-text {
+        display: block;
+        font-size: 1.5rem;
+        color: rgb(6, 6, 10);
+        background: linear-gradient(to right, #20002c36, #c589dd67);
+        transform: translateY(-300px);
+        /* top: calc(100% - 2em); */
+        width: 100%;
+        height: 100%;
+        font-size: 0.9rem;
+        font-weight: bolder;
+
+    }
+}
