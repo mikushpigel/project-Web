@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mardi Gras New Orleans</title>
+    <link rel="stylesheet" href="../SASS/main.css">
+</head>
+
+<body>
+    <div class="desk-nav">
+        <a href="#" class="d-logo"><img src="../img/logoshakuf.png" alt="logo" class="logo-b"></a>
+        <ul class="desk-nav-ul">
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./about.html">About</a>
+            </li>
+            <li>
+                <a href="./media.html">Media</a>
+            </li>
+            <li>
+                <a href="./FAQ.html">FAQ</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            let desknav = document.querySelector('.desk-nav');
+            desknav.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+    <div class="device">
+
+        <button id="burger" class="open-main-nav">
+            <span class="burger"></span>
+            <span class="burger-text">Menu</span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="./media.html">Media</a>
+                </li>
+                <li>
+                    <a href="./FAQ.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="#"><img src="../img/logo.png" alt="logo" class="logo"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="picmask">
+        <img src="../img/bann.jpg" alt="mask" class="bgmask">
+    </div>
+    <div class="body_c">
+        <div class="faq">
+            <h1 class="titles">Contact us</h1>
+        </div>
+        <div class="contact_c">
+            <form action="thank.html">
+                <h2>Give Us a Shout!</h2>
+                <div class="formControl">
+                    <label for="userName">Your Name</label>
+                    <input type="text" id="userName" placeholder="Enter User Name">
+                    <small>Error Message</small>
+                </div>
+                <div class="formControl">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email">
+                    <small>Error Message</small>
+                </div>
+                <div class="formControl">
+                    <label for="phone">phone</label>
+                    <input type="tel" id="tel" placeholder="Enter phone number">
+                    <small>Error Message</small>
+                </div>
+                <div class="formControl">
+                    <label for="comment">Tell us something</label>
+                    <textarea name="" id="comment" maxlength="300" placeholder="your comments"></textarea>
+                    <!-- <input type="text" id="comment" placeholder="your comments"> -->
+                    <small>Error Message</small>
+                </div>
+                <input type="submit" id="btn" value="send">
+            </form>
+        </div>
+    </div>
+    <script>
+        let burger = document.getElementById('burger'),
+            nav = document.getElementById('main-nav'),
+            slowmo = document.getElementById('slowmo');
+
+        burger.addEventListener('click', function (e) {
+            this.classList.toggle('is-open');
+            nav.classList.toggle('is-open');
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <!-- contact -->
+    <script>
+        const form = document.querySelector('form'),
+            userName = document.getElementById('userName'),
+            email = document.getElementById('email'),
+            tel = document.getElementById('tel'),
+            comment = document.getElementById('comment'),
+            btn = document.getElementById('btn');
+
+        //שני פרמטרים אחד אינפוט על איזה שדה מדובר והפרמטר השני הודעה איזה שגיאה נרצה שתוצג
+        function showError(input, message) {
+            const formControl = input.parentElement;
+            formControl.className = 'formControl error';
+            const small = formControl.querySelector('small');
+            small.innerText = message;
+        }
+
+        function showSuccess(input) {
+            const formControl = input.parentElement;
+            formControl.className = 'formControl success';
+        }
+        form.addEventListener('submit', (e) => {
+            if (userName.value == "" || email.value == "" || email.value.indexOf('@') == -1 || email.value
+                .indexOf(
+                    '.') == -1 || tel.value == "" || comment.value == "") {
+                e.preventDefault();
+            }
+        });
+
+        btn.addEventListener('click', (e) => {
+            if (userName.value == '') {
+                showError(userName, 'User Name is required');
+            } else {
+                showSuccess(userName);
+            }
+            if (email.value == '') {
+                showError(email, 'Email is required');
+            } else if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
+                showError(email, 'Email must include . and @');
+            } else {
+                showSuccess(email);
+            }
+            if (tel.value == '') {
+                showError(tel, 'phone number is required');
+            } else {
+                showSuccess(tel);
+            }
+            if (comment.value == '') {
+                showError(comment, 'tell us something');
+            } else {
+                showSuccess(comment);
+            }
+
+        });
+    </script>
+</body>
+
+</html>

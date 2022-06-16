@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../SASS/main.css">
+    <link rel="stylesheet" href="../CSS/lightbox.css">
+    <title>Mardi Gras New Orleans/Media</title>
+</head>
+
+<body>
+    <div class="desk-nav">
+        <a href="#" class="d-logo"><img src="../img/logoshakuf.png" alt="logo" class="logo-b"></a>
+        <ul class="desk-nav-ul">
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./about.html">About</a>
+            </li>
+            <li>
+                <a href="./media.html">Media</a>
+            </li>
+            <li>
+                <a href="./FAQ.html">FAQ</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            let desknav = document.querySelector('.desk-nav');
+            desknav.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
+    <div class="device">
+
+        <button id="burger" class="open-main-nav">
+            <span class="burger"></span>
+            <span class="burger-text">Menu</span>
+        </button>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+                <li>
+                    <a href="./media.html">Media</a>
+                </li>
+                <li>
+                    <a href="./FAQ.html">FAQ</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="#"><img src="../img/logo.png" alt="logo" class="logo"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="picmedia">
+        <img src="../img/bannerg.jpg" alt="banner" class="bgmask">
+    </div>
+
+
+
+    <div class="media">
+        <div class="box-title">
+            <h1 class="titles">Gallery</h1>
+        </div>
+
+        <div class="media_g">
+            <a href="../img/MardiGras2.jpg" data-lightbox="mymedia" data-title="Caption1">
+                <img src="../img/MardiGras2.jpg" alt="">
+            </a>
+            <a href="../img/media.jpg" data-lightbox="mymedia" data-title="Caption2">
+                <img src="../img/media.jpg" alt="">
+            </a>
+            <a href="../img/resize2.jpg" data-lightbox="mymedia" data-title="Caption3">
+                <img src="../img/resize2.jpg" alt="">
+            </a>
+            <a href="../img/info5.jpg" data-lightbox="mymedia" data-title="Caption4">
+                <img src="../img/info5.jpg" alt="">
+            </a>
+            <a href="../img/img4.jpeg" data-lightbox="mymedia" data-title="Caption5">
+                <img src="../img/img4.jpeg" alt="">
+            </a>
+            <a href="../img/img3.jpg" data-lightbox="mymedia" data-title="Caption6">
+                <img src="../img/img3.jpg" alt="">
+            </a>
+            <a href="../img/img9.jpg" data-lightbox="mymedia" data-title="Caption7">
+                <img src="../img/img9.jpg" alt="">
+            </a>
+            <a href="../img/mardi-gras-7.jpg" data-lightbox="mymedia" data-title="Caption8">
+                <img src="../img/mardi-gras-7.jpg" alt="">
+            </a>
+            <a href="../img/img1.jpg" data-lightbox="mymedia" data-title="Caption9">
+                <img src="../img/img1.jpg" alt="">
+            </a> </div>
+        <div class="boxi">
+            <h1>Videos</h1>
+            <hr>
+        </div>
+
+        <div class="video-g">
+            <iframe width="1180" height="664" src="https://www.youtube.com/embed/EkIZwXbSh-Y"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="1180" height="664" src="https://www.youtube.com/embed/YrVHv7FD-7o"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="1180" height="664" src="https://www.youtube.com/embed/R2v3E00bceo"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="1180" height="664" src="https://www.youtube.com/embed/pBFSY4RM0p4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <!-- <aside>
+        <img src="../img/bgc1.jpg" alt="">
+    </aside> -->
+
+    <script src="../js/lightbox-plus-jquery.js"></script>
+    <script>
+        let burger = document.getElementById('burger'),
+            nav = document.getElementById('main-nav'),
+            slowmo = document.getElementById('slowmo');
+
+        burger.addEventListener('click', function (e) {
+            this.classList.toggle('is-open');
+            nav.classList.toggle('is-open');
+        });
+    </script>
+</body>
+
+</html>
