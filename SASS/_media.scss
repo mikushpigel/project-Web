@@ -9,7 +9,7 @@
     justify-content: center;
     flex-direction: column;
     /* padding: 60px 20px; */
-    border-radius: 35px 5px;
+    border-radius: 35px;
     background-color: #20002cc4;
 
     transition: all .20s ease-in;
@@ -60,10 +60,21 @@ iframe {
     display: block;
     width: 100%;
 
+
+}
+
+.box-title hr {
+    display: none;
+}
+
+.box-middle {
+    margin-bottom: 10px;
 }
 
 
 @include desktop {
+
+
     iframe {
         width: 20rem;
         /* width: 35%; */
@@ -83,8 +94,8 @@ iframe {
         align-items: center;
     }
 
-    hr {
-
+    .box-title hr {
+        display: block;
         margin: 0px auto;
         border: 0;
         background-color: #239e33dc;
@@ -96,6 +107,7 @@ iframe {
 
 
     hr::before {
+        display: block;
         content: "";
         background-color: #7033acde;
         width: 33.33%;
@@ -103,6 +115,7 @@ iframe {
     }
 
     hr::after {
+        display: block;
         content: "";
         background-color: #e5c431d7;
         width: 33.33%;

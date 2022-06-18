@@ -9,7 +9,7 @@
     height: 100%;
     margin: 0 auto;
     border-radius: 50px 2px;
-    padding: 40px 0px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -101,6 +101,10 @@ textarea {
     transform: scale(0.9);
 }
 
+.contact-box {
+    position: relative;
+}
+
 @include desktop {
     .body_c {
         width: 70vw;
@@ -122,9 +126,6 @@ textarea {
         width: 40%;
         padding: 30px 40px;
         border-radius: 35px;
-
-
-
     }
 
     .picmask {
@@ -143,4 +144,5 @@ textarea {
         background-color: #a853eec4;
         clip-path: polygon(0 0, 100% 0, 100% 50%, 0 90%);
     }
+
 }

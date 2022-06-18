@@ -247,10 +247,10 @@ h2 {
     .section-home {
         max-width: 80rem;
         margin: 150px auto;
-        padding: 0 20px 100px 20px;
+        padding: 0 10px 0px 10px;
         /* gap: 10px; */
         background-color: #190824ef;
-        border-radius: 35px 8px;
+        border-radius: 35px 35px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -329,9 +329,24 @@ h2 {
     .hometext {
         display: none;
     }
+
+    .box-title {
+        padding: 20px 0;
+    }
+
+    .box-title h1.titles {
+        font-size: 100px;
+    }
 }
 
 @include mobile {
+    .box-title {
+        background-color: #000;
+        width: 100%;
+        padding: 25px 0;
+        border-radius: 0 0 35px 35px;
+    }
+
     .mayor_box {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
