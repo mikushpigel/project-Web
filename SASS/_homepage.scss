@@ -384,6 +384,10 @@ h2 {
 }
 
 @include mobile {
+    .about h1 {
+        font-size: 2rem;
+    }
+
     .box-title {
         background-color: #16052c;
         width: 100%;
