@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mardi Gras New Orleans</title>
     <link rel="stylesheet" href="../SASS/main.css">
+    <link rel="shortcut icon" href="../img/pngicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -32,12 +36,7 @@
         </ul>
     </div>
     <section class="banner"></section>
-    <script type="text/javascript">
-        window.addEventListener('scroll', function () {
-            let desknav = document.querySelector('.desk-nav');
-            desknav.classList.toggle('sticky', window.scrollY > 0);
-        });
-    </script>
+
     <div class="device">
 
         <button id="burger" class="open-main-nav">
@@ -104,6 +103,32 @@
             </form>
         </div>
     </div>
+    <footer class="footer_">
+        <div class="wrapper-footer">
+            <div class="social">
+                <a href="https://twitter.com/hashtag/mardigras2022" target="_blank">
+                    <i class="fab fa-twitter fa-3x"></i></a>
+                <a href="https://www.facebook.com/MardiGras.nola" target="_blank"><i
+                        class="fab fa-facebook fa-3x"></i></a>
+                <a href="https://github.com" target="_blank">
+                    <i class="fab fa-github fa-3x"></i></a>
+                <a href="https://www.instagram.com/explore/tags/mardigras" target="_blank">
+                    <i class="fab fa-linkedin fa-3x"></i></a>
+                <p> <span style="font-size: 2rem;">&copy;</span> 2022 Shpigel Rotem Project Html Css JS </p>
+            </div>
+            <a href="#">
+                <i class="topic fa fa-arrow-up" aria-hidden="true" style="font-size: 30px;"></i>
+            </a>
+        </div>
+
+
+    </footer>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            let desknav = document.querySelector('.desk-nav');
+            desknav.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
     <script>
         let burger = document.getElementById('burger'),
             nav = document.getElementById('main-nav'),

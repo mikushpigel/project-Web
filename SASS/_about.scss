@@ -25,12 +25,12 @@ body {
     position: relative;
     box-shadow: 0 0 10px aliceblue;
     background: linear-gradient(to right, #bc50da, #66ff00);
-    border-radius: 8px;
-
+    border-radius: 15px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+    margin-bottom: 20px;
 }
 
 .aboutinfo {

@@ -19,3 +19,9 @@ $basefont:'Roboto';
         @content;
     }
 }
+
+@mixin tablet {
+    @media (max-width:1400px) {
+        @content;
+    }
+}
