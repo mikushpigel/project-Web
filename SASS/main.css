@@ -183,7 +183,7 @@
   width: 28px;
   height: 4px;
   margin: 0 auto;
-  background: #16052c;
+  background: #dad6df;
   -webkit-transform: skew(20deg);
           transform: skew(20deg);
   -webkit-transition: all .1000s;
@@ -195,7 +195,7 @@
   content: '';
   display: block;
   height: 100%;
-  background: #16052c;
+  background: #dad6df;
   -webkit-transition: all .275s;
   transition: all .275s;
 }
