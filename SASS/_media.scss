@@ -26,6 +26,12 @@
 .media_g img {
     width: 100%;
     border-radius: 8px;
+    transition: all 1s ease-in-out;
+
+}
+
+.media_g img:hover {
+    transform: scale(0.8);
 }
 
 .media_g a {
@@ -48,6 +54,7 @@ iframe {
     filter: grayscale(0.2);
     height: 20vh;
     border-radius: 10px;
+
 }
 
 .video-g {

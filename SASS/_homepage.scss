@@ -216,12 +216,17 @@ h2 {
 
 .wrapper-footer p {
     font-family: $basefont;
-    color: #000;
-    font-size: 1.3rem;
+    color: rgb(199, 193, 193);
+    font-size: 1rem;
     font-weight: bolder;
 }
 
 @include desktop {
+    .wrapper-footer p {
+
+        font-size: 1.3rem;
+
+    }
 
 
     .img {
