@@ -231,7 +231,7 @@
 
         &.sticky {
             padding: 5px 100px;
-            background-color: #fff;
+            background-color: rgb(203, 178, 231);
         }
 
         .d-logo {
@@ -258,11 +258,12 @@
                     position: relative;
                     margin: 0 15px;
                     text-decoration: none;
-                    color: #fff;
-                    letter-spacing: 2px;
-                    font-weight: 500px;
+                    color: rgb(214, 205, 205);
+                    letter-spacing: 1px;
+                    /* font-weight: 500px; */
                     transition: 0.6s;
-                    font-family: 'Patttaya';
+                    font-family: 'Pattaya';
+                    font-size: 1.5rem;
 
                 }
             }

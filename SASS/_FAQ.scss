@@ -8,23 +8,26 @@
 
 
 
-h5{
+h5 {
     font-size: 1rem;
     color: rgba(10, 10, 10, 0.8);
     width: 100%;
-    font-family: 'Roboto',sans-serif;
-    
+    font-family: 'Roboto', sans-serif;
+
 }
-h3{
+
+h3 {
     font-family: 'Pattaya';
     font-size: 2rem;
     text-align: center;
     color: rgb(132, 138, 143);
 }
-.accordion{
+
+.accordion {
     padding: 20px 0px;
 }
-.section-faq{
+
+.section-faq {
     width: 100vw;
     margin: 50px auto;
     border-radius: 35px 2px;
@@ -35,92 +38,108 @@ h3{
     flex-direction: column;
     overflow: auto;
     box-sizing: border-box;
-   /*  padding: 20px 0; */
-    
+    /*  padding: 20px 0; */
+
 }
 
-.container-faq{
+.container-faq {
     width: 100%;
     max-width: 90rem;
     padding: 20px 1.5rem;
     /* margin: 200px auto; */
-    
+
 }
-.accordion-item{
+
+.accordion-item {
     background: linear-gradient(to left, #20002c, #c17bdd);
     border-radius: 35px 2px 35px 2px;
     margin-bottom: 1rem;
-    padding:1rem;
-    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
     cursor: pointer;
     display: flex;
     align-items: center;
 }
-.answer{
+
+.answer {
     max-height: 0;
-    overflow: hidden; 
+    overflow: hidden;
     position: relative;
     text-align: justify;
     background-color: #0c0b0cdc;
     transition: max-height 650ms;
     border-radius: 35px;
-    
+
 }
-.answer::before{
-   content: "";
-   position: absolute;
-   width: .6rem;
-   height: 90%;
-   background-color: #9e42e4;
-   top: 50%;
-   left: 0;
-   transform: translateY(-50%); 
+
+.answer::before {
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color: #9e42e4;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
 }
-.answer p{
+
+.answer p {
     font-size: 1rem;
     color: rgba(255, 255, 255, 0.877);
     padding: 2rem;
-} 
- .accordion-item .icon{
+}
+
+.accordion-item .icon {
     margin: 0 30px 0 0;
     width: 35px;
     height: 35px;
     background: url(../img/iconfinger35.png)no-repeat;
-    
-    
+
+
     transition: all .5s ease-in;
 }
-.active .icon{
+
+.active .icon {
     transform: rotate(180deg);
     transition: all .20s ease-in-out;
-    
+
 }
-@include desktop{
-    h5{
+
+@include desktop {
+    h5 {
         font-size: 1.1rem;
     }
-    .section-faq{
-    width: 50vw;
-    margin: 200px auto;
-    border-radius: 50px;
+
+    .section-faq {
+        width: 50vw;
+        margin: 200px auto;
+        border-radius: 50px;
     }
-        .accordion{
-    padding: 50px 50px;
-    /* background-color: rgba(14, 13, 13, 0.795); */
-    background: linear-gradient(to right, #20002c, #0e0d0de1);
-     max-width: 80%;
+
+    .accordion {
+        padding: 50px 50px;
+        /* background-color: rgba(14, 13, 13, 0.795); */
+        background: linear-gradient(to right, #20002c, #0e0d0de1);
+        max-width: 80%;
         margin: 0 auto;
         border-radius: 35px;
 
     }
-    h3{
+
+    h3 {
         font-size: 3rem;
     }
-    .faq{
-        padding: 20px 0;
+
+    .faq h1.titles {
+        font-size: 130px;
+        padding-bottom: 10px;
+
     }
-    
+
+    .faq {
+        padding: 20px 0;
+        max-width: 50rem;
+
+    }
+
 }
-
-
-

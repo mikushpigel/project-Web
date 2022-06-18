@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: center;
 
-    max-width: 85%;
+
 
 
 }
@@ -53,8 +53,9 @@ h1.titles {
         max-width: 50rem;
         margin: 0 auto;
         border-radius: 8px 8px 8px 35px;
-        background: radial-gradient(ellipse at bottom,
-                #022227f1 0%, #000000f5 100%);
+        /* background: radial-gradient(ellipse at bottom,
+                #022227f1 0%, #000000f5 100%); */
+
         transform: skew(25deg);
         box-shadow: 0 0 5px #000;
         position: relative;
@@ -64,7 +65,7 @@ h1.titles {
         /*  position: relative;
                     top:0;
                     left: 0; */
-        max-width: 85%;
+        /* max-width: 85%; */
 
         .titles {
             font-size: 100px;
